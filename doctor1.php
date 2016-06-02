@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
   $docid = $_SESSION['sess_user_id'];
 //$docid = "cat";
  
