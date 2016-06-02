@@ -1,0 +1,21 @@
+<?php
+//Start session
+session_start();
+  $_SESSION['sess_user_id'] = $_SESSION['sess_user_id'];
+//Check whether the session variable SESS_MEMBER_ID is present or not
+if(!isset($_SESSION['sess_user_id']) || (trim($_SESSION['sess_user_id']) == '')) {
+	header("location: login.php");}
+	// remove all session variables
+	//|| $_GET["name"]!=$_SESSION['sess_user_id']
+//session_unset(); 
+
+// destroy the session 
+//session_destroy(); 
+	//exit();
+	echo $_SESSION['sess_user_id'];
+	$_SESSION['sess_pat_id']="shiva";
+	
+	unset($_SESSION['sess_user_id']);
+	echo $_SESSION['sess_user_id'];
+	echo $_SESSION['sess_pat_id'];
+?>
